@@ -1,0 +1,18 @@
+[package]
+name = "test-app"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.64"
+publish = false
+
+[dependencies]
+tokio = { version = "1.21.2", features = ["rt-multi-thread", "macros", "signal"] }
+axum = "0.7.5"
+
+dotenv = "0.15.0"
+rspc = "0.2.0"
+rspc-axum = { version = "0.1.1" }
+specta = { version = "1", features = ["chrono"] }
+
+[package.metadata.pkg-config]
+openssl = "0.0.3"
